@@ -6,6 +6,23 @@ carpeta_proyecto = Path(__file__).parent.parent
 archivo = carpeta_proyecto / "datos" / "productos.txt"
 lineas = archivo.read_text(encoding="utf-8").splitlines()
 
-print("=== Invenario Tienda Don Pedro ===")
+print("=== Inventario Tienda Don Pedro ===")
+
+for productos in lineas[2:]:
+    print("-", productos)
+
+
+contador_productos = 0
+total = 0
+
 for linea in lineas[2:]:
-    print("-", linea)
+    if "$" in linea:
+        valor=linea.split("$")[1].strip()
+        precio = valor.replace(".","")
+        total += int(precio)
+    contador_productos += 1
+
+print(f"\nTotal de productos: {contador_productos}")
+print(f"Total valor del inventario: ${total}")
+
+
