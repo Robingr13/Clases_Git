@@ -23,3 +23,9 @@ El programa utiliza los siguientes archivos de texto para almacenar la informaci
 |---|---|
 | Leche 1L | $4.500 |
 | Pan tajado | $6.500 |
+
+## 🛵 Domicilios
+
+- Horario: 7:00 am.m a 9:00 .m.
+- Aplica para toda el área metropolitana.
+- Celular: 300 123 4567
